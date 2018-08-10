@@ -1,0 +1,8 @@
+*.tiff
+*.u3d
+examples/
+libraries/
+modes/
+templates/
+tools/
+m_*/
