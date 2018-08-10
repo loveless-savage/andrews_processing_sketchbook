@@ -6,3 +6,4 @@ modes/
 templates/
 tools/
 m_*/
+*.sw*
