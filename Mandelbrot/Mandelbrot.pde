@@ -16,7 +16,7 @@
     matheatically speaking, if the absolute value of z exceeds 2, z will shoot off from there.  That will tell us it diverges to infinity.
   *if a point fails the test, we will color it in.  The color depends on how many iterations before it passed the boundary.
   *this gives us an awesome rainbow effect, radiating around the passing points.
-  *all the points that don't fail after 16 iterations are left blank.
+  *all the points that don't fail after 20 iterations are left blank.
   
  *It's called the Mandelbrot Set after Benoit Mandelbrot...
   ...who did tons of research on it.
@@ -46,6 +46,9 @@
 
 //each colored border contains the points that failed after some number of iterations- 20 is the max!
 int resol=16;
+
+//different window sizes: how much of the coordinate plane to show
+float windowSize=2.0;
 
 class Pt {
 	PVector c,z;
@@ -81,8 +84,8 @@ void colp(byte inputtedIndex){
 Pt temp;
 
 void setup(){
-	size(400,400);
-	translate(250,200);
+	size(200*windowSize,200*windowSize);
+	translate(100*windowSize,100*windowSize);
 	background(255);
 	colorMode(HSB);
 
@@ -106,6 +109,10 @@ void setup(){
 			}
 		}
 	}
+
+	colorMode(RGB);
+	fill(0);
+	delay(100);
 }
 
 void draw(){}
