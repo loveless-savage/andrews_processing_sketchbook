@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "compiling $1"
+../processing-java --sketch=$1 --output=../tmp --force --run
+echo ""
+
+# additional options for nmbrot project
+if [ $1 == nmbrot ]
+then
+	echo "documents:"
+	cd nmbrot
+	ls m_*.tiff
+	cd ../..
+fi
