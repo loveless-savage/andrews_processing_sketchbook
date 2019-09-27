@@ -3,7 +3,7 @@ I am not affiliated with the processing foundation, nor do I own rights to their
 
 To run these projects, you will need the processing development environment environment on your computer, which can be found here:
 https://www.processing.org/download/
-once it is set up, download this repository and unzip, or clone it. Then use it's containing folder to replace the sketchbook folder in the processing file structure.
+once it is set up, download this repository and unzip, or clone it. Then use the containing folder of this project to replace the `sketchbook` folder in the processing file structure.
 If you don't want to download this stuff onto your computer, you can copy and paste the text in the .pde files into the online sandbox:
 https://www.openprocessing.org/sketch/create
 
